@@ -35,3 +35,31 @@ fn divmod(x:i32,y:i32)->Result<(i32,i32),String>{
     }
     return Ok((x/y,x%y));
 }
+/*
+enum Gender {
+    Male {name:String, is_military:bool},
+    Female {name:String}
+}
+
+fn get_customer(id:i32) -> Gender {    
+    if id % 2 == 0 {
+        return Gender::Male{name:"Jeff".to_owned(), is_military:true};
+    }
+    return Gender::Female {name:"Alice".to_owned()};
+}
+
+fn main() {
+    let gender = get_customer(10);
+    match gender {
+        Gender::Male{name:n, is_military:b} =>{
+            println!("name={}, is_military={}",n,b);
+        },
+        Gender::Female{name:n} => {
+            println!("name={}",n);
+        },
+    }
+}
+
+다음과 ㄱ같이 enum을 구조체스럽게 사용할수도있다.
+
+*/ 

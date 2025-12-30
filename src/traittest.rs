@@ -147,3 +147,4 @@ fn failcase(x:bool)->Box<dyn Run>{
         })
     }
 }
+//#[derive(Serialize)]-->이ㅓㄱ뭐 자동생성 메서드라는대 일단그렇다.
